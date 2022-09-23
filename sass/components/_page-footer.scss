@@ -181,7 +181,12 @@
         justify-content: center;
     }
     .social-networks__text {
+        display: block;
         text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer-form__imput{
+        padding-bottom: 20px;
     }
                            }
 
