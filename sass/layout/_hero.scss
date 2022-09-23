@@ -1,0 +1,115 @@
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2f303a;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hero__container {
+
+    @media screen and (max-width:767px) {
+        width: 360;
+        height: 164px;
+        
+    }
+
+}
+@media screen and (max-width:767px){
+.hero {
+    
+max-width: 767px;
+
+padding-top: 60px;
+padding-bottom: 60px;
+    }
+    
+}
+
+
+
+@media screen and (min-width:1600px){
+    .hero {
+    
+            max-width: 1600px;
+ 
+            padding-top: 200px;
+            padding-bottom: 200px;
+
+}}
+.hero__title {
+    text-align: center;
+    text-transform: uppercase;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 16px;
+    height: 1.88;
+
+    color: #ffffff;
+   
+    // font-size: 44px;
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.37;
+
+
+    @media screen and (max-width: 1599px) {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 1.61;
+        width: 360px;
+        height: 84px;
+
+    }
+
+  
+
+    @media screen and (min-width: 1600px){
+        font-size: 44px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.37;
+        width: 696px;
+        height: 120px;
+
+
+    }
+}
+
+
+.hero__button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+
+    cursor: pointer;
+    border-radius: 4px;
+
+    align-items: flex-start;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--color-web-blue);
+
+    color: #ffffff;
+
+    text-align: center;
+    padding: 10px 32px;
+
+    border: 0;
+    letter-spacing: 0.06em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}

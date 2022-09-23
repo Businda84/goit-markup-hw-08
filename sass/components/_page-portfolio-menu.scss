@@ -1,0 +1,133 @@
+.menu-portfolio-btn {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+    gap: 8px;
+    color: var(--color-text-main);
+    transform: color var(--transition-timing-cub);
+
+     &:hover,
+     &:focus {
+            color: var(--color-web-blue);
+        }
+}
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container-home {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portf-h-invis {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.portf-h-invis {
+    text-align: center;
+}
+
+.projects-h {
+    margin-bottom: 4px;
+    color: var(--color-text-main);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects-p {
+    color: var(--color-text-secondary);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+.projects-li {
+    display: block;
+    box-sizing: border-box;
+    background: #ffffff;
+    transition: box-shadow var(--transition-timing-cub);
+
+        &:hover,
+        &:focus {
+            box-shadow: cubic-bezier(0.4, 0, 0.2, 1), rgba(0, 0, 0, 0.25);
+        }
+}
+
+
+.projects-item {
+    width: 370px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+}
+
+.projects-card {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.overlay {
+    position: absolute;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    width: 100%;
+    height: 100%;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    overflow-y: auto;
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .projects-li:hover &,
+        .projects-li:focus & {
+            transform: translateY(0%);
+        }
+}
+.person {
+    padding: 20px 24px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}

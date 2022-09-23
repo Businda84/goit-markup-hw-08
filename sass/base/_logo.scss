@@ -1,0 +1,47 @@
+.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    
+    
+    letter-spacing: 0.03em;
+    
+    color: #000000;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--color-web-blue);
+    }
+
+    @media screen and (mix-width:480px) {
+
+        
+    }
+ }
+        
+    
+.logo__web {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+
+    color: #2196f3;
+}
+@media screen and (min-width:280px) {
+    .logo{margin-left: 0;}
+   
+}
