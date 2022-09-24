@@ -3,7 +3,7 @@
 @media screen and (max-width:767px) {
     .client{
         padding-bottom: 30px;
-        width: calc(100%-90px/6);
+        width: calc(100% - 90px/6);
         height: 92px;
         }
     }
@@ -16,7 +16,7 @@
 .regular-customers__title {
     padding-bottom: 50px;
     text-align: center;
-   
+   padding-top: 40px;
             padding-bottom: 0px;
             font-weight: 700;
             font-size: 36px;
@@ -35,7 +35,7 @@
     width: 100%;}}
  
 
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1200px) {
     .client-list {
         box-sizing: border-box;
         display: flex;
@@ -82,7 +82,7 @@
 @media screen and(max-width:767px){
 
 }
-@media screen and(min-width:1600px) {
+@media screen and(min-width:1200px) {
    
             box-sizing: border-box;
             display: flex;

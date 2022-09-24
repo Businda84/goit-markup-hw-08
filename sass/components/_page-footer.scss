@@ -42,13 +42,16 @@
 
     gap: 10px;}
 .social-networks {
-    text-align: center;
+    // text-align: center;
 
-    display: flex;
-    width: 44px;
-    height: 44px;
+    // display: flex;
+    // width: 44px;
+    // height: 44px;
+    margin-left: auto;
+    margin-right: auto;
     gap: 10px;
     border-radius: 50%;
+  
 }
 .address__maps {
     color: white;
@@ -81,15 +84,32 @@
 .address__list :not(:last-child) {
     margin-bottom: 9px;
 }
+.address__list {
+    @media  screen and (min-width:480px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    }
+
 .logo__studio {
     color: #ffffff;
 }
 
 .footer-form {
     margin-left: auto;
+    @media screen and (min-width:480px)
+     {
+        display: flex;
+        flex-direction: column;
+margin: 0;
+    }
+
 }
 .footer-form__text {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
     color: #ffffff;
     text-transform: uppercase;
@@ -99,12 +119,21 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-align: left;
+    @media screen and(max-width:11999px) {
+        margin: 0;
+        padding-bottom: 20px;
+        
+    }
 
 }
 
 .footer-form__wind {
-    display: flex;
-    flex-direction: column;
+    @media screen and (max-width:1199px) {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+   
 }
 
 .footer-form__imput {
@@ -120,6 +149,12 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background: transparent;
     color: rgba(255, 255, 255, 0.6);
+    @media screen and (max-width:1199px) { 
+        margin-right: auto;
+        margin-left: auto;
+      margin-bottom: 20px;
+        
+    }
 
 
 }
@@ -160,12 +195,13 @@
     letter-spacing: 0.03em;
     font-weight: 700;
     margin-bottom: 20px;
-    margin-right: auto;
+    // margin-right: auto;
     font-size: 14px;
     line-height: 1.14;
     color: #ffffff;
 }
  @media screen and (max-width:767px) {
+    
     .footer__logo {
         padding: 0;
         display: inline-block;
@@ -179,6 +215,7 @@
     .address {
         display: flex;
         justify-content: center;
+        padding-bottom: 60px;
     }
     .social-networks__text {
         display: block;
@@ -192,7 +229,7 @@
 
 
 
- @media screen and (min-width:1600px) {
+ @media screen and (min-width:1200px) {
         .address{
             display: flex;}
         .footer__logo {
@@ -240,15 +277,10 @@
     .footer__container{
         display: flex;
         flex-direction: column;
-        width: 0;
-        height: 0;
-        padding-bottom: 60px;
     }
-    .social-networks{
-
-    }
+ 
 }
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1200px) {
     .social-networks {
             border: 0px;
             width: 206px;

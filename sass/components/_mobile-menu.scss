@@ -1,11 +1,13 @@
+@media screen  {
+    
+}
 .mobile-menu__container {
-    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     position:relative;
-    padding-left:40px;
-    
-    
     padding-top: 0px;
-    height: 100%;
+    
 }
 
 .mobile-menu{ 
@@ -34,9 +36,7 @@
 }
     
 
-.mobile-menu__container {
 
-}
 .close-menu-btn {
     position: absolute;
     top: 10px;
@@ -135,6 +135,7 @@ margin-bottom: 32px;
 .mobile-menu__social-network-contact{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 48px;
 
    :not(:last-child) {
         border-right: 1px solid #21212133;

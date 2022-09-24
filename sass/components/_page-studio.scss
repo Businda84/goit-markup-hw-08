@@ -15,7 +15,7 @@
 }
 
 
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1200px) {
     .our-features {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -33,7 +33,7 @@
 }
 
 .our-features__list {
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         gap: 30px;
     }
