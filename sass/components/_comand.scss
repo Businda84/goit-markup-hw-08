@@ -99,6 +99,18 @@
 
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
+ 
+      
+}
+
+@media screen and (min-width:767px) 
+{
+    .team__item{display: block;}
+    & :not(last-child){
+        
+  margin-bottom: 30px;
+    }
+    
 }
 .icon-networks {
     width: 20px;

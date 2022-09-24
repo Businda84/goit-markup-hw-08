@@ -2,6 +2,10 @@
     overflow:scroll;
     position:relative;
     padding-left:40px;
+    
+    
+    padding-top: 0px;
+    height: 100%;
 }
 
 .mobile-menu{ 
@@ -31,9 +35,7 @@
     
 
 .mobile-menu__container {
-       position: relative;
 
-        padding-top: 0px;
 }
 .close-menu-btn {
     position: absolute;
