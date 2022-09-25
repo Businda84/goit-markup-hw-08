@@ -116,9 +116,9 @@ margin: -15px;
     background-color: #ffffff;
     margin-bottom: 30px;
 @media screen and (max-width:767px){
-    &:not(last-child) {
+    &:last-child {
     
-            margin-bottom: 30px;
+    margin-bottom: 0px;
         }
 }
 @media screen and (min-width:768px) {

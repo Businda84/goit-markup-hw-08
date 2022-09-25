@@ -47,7 +47,10 @@ screen and (min-resolution: 2dppx)and (min-width:1200px) {
     @media screen and (max-width:767px) {
         width: 360;
         height: 164px;
-        
+    @media screen and (min-width:1200px){
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
     }
 
 }
@@ -63,14 +66,18 @@ padding-bottom: 60px;
 
 
 
-@media screen and (max-width:1199px){
+@media screen and (min-width:768px){
     .hero {
     
-            max-width: 1199px;
- 
-            padding-top: 118px;
-            padding-bottom: 118px;
+    width: 100%;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
+@media screen and (min-width:1200px){
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 }}
 .hero__title {
     text-align: center;
