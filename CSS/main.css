@@ -1426,10 +1426,15 @@ input {
   margin-bottom: 9px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .address__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768) {
+  .address__list {
     align-items: center;
   }
 }
