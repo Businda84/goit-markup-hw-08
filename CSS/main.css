@@ -308,9 +308,6 @@ img {
   flex-direction: row;
 }
 
-.contact:not(:last-child) {
-  margin-right: 50px;
-}
 @media screen and (max-width: 767px) {
   .contact {
     display: none;
@@ -327,14 +324,13 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contact {
-    display: block;
-    margin-left: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact {
     display: flex;
     margin-left: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact :not(:last-child) {
+    margin-right: 50px;
   }
 }
 
