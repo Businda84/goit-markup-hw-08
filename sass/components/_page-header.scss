@@ -20,7 +20,10 @@
     @media screen and (min-width: 768px){
       display: flex;
       align-items: center;
-      margin-left: auto;
+  
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
     }
     @media screen and (min-width: 1200px)
      
@@ -76,9 +79,6 @@
   }
 }
 
-.contact :not(:last-child) {
-  margin-right: 50px;
-}
 .current.pagination__item
  {
   color: var(--color-web-blue);
@@ -215,10 +215,7 @@
   @media screen and (min-width: 768px) {
         display: block;}
 
-     @media screen and(min-width:768px) {
-       width: 16px;
-       height: 12px;
-     }
+
 }
  .page-header .tab{
   @media screen and (min-width:768px) and (max-width:1199px) {

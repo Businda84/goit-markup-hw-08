@@ -24,13 +24,31 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo:hover, .logo:focus {
   color: var(--color-web-blue);
@@ -67,7 +85,7 @@
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -302,7 +320,9 @@ img {
   .contact {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -354,10 +374,6 @@ img {
   .open-mobile-menu-btn-icon {
     display: none;
   }
-}
-
-.contact :not(:last-child) {
-  margin-right: 50px;
 }
 
 .current.pagination__item {
@@ -462,12 +478,6 @@ img {
 @media screen and (min-width: 768px) {
   .contact__list {
     display: block;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contact__list {
-    width: 16px;
-    height: 12px;
   }
 }
 
