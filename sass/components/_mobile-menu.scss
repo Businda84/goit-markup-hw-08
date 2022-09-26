@@ -30,10 +30,12 @@
     width: 40px;
     height:40px;
     fill: #212121;
-
+transition: fill 250ms var(--transition-timing-cub)
 }
     
-
+.close-menu-btn-icon:hover {
+    fill: var(--color-web-blue);
+}
 
 .close-menu-btn {
     position: absolute;
