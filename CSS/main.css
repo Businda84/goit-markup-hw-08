@@ -1121,6 +1121,7 @@ input {
   .client {
     padding-bottom: 30px;
     margin: 0;
+    width: 210px;
     height: 92px;
   }
 }
@@ -1167,14 +1168,13 @@ input {
     gap: 30px;
   }
 }
-.client-list {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-}
 @media screen and (max-width: 767px) {
   .client-list {
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
