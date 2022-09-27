@@ -963,11 +963,6 @@ input {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 479px) {
-  .team :not(last-child) {
-    padding-bottom: 60px;
-  }
-}
 .team__name {
   padding-top: 30px;
   margin-bottom: 10px;
