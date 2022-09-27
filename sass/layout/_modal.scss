@@ -21,8 +21,8 @@
         }
     
         @media screen and (min-width:1200px) {
-            width: 100%;
-            height: 100%;
+            width:527px;
+            height: 581px;
             padding: 40px;
         }
 }
@@ -107,6 +107,8 @@ textarea {
 }
 
 .contract {
+    font-size: 14px;
+    line-height: 1.71;
     color: var(--color-web-blue);
     text-decoration: underline;
 }

@@ -67,6 +67,8 @@
 .open-mobile-menu-btn-icon{
   width: 40px;
   height: 40px;
+          transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover{
     fill: currentColor;
   }
@@ -152,13 +154,13 @@
     @media screen and(min-width:768px) {
       
       display: flex;
-  
+      gap: 8px;
       align-items: center;
       margin-bottom: 10px;
       
     }
        
-    @media screen  and (min-width:1599px) {display: flex;
+    @media screen  and (min-width:1200px) {display: flex;
       align-items: center;
     
       padding-top: 32px;
@@ -183,6 +185,7 @@
     // letter-spacing: 0.02em;
     // transition: color var(--transition-timing-cub);
  .container.page-header {
+  border-bottom: 1px solid #ECECEC;
   @media screen and (max-width: 767px){
    
     margin-bottom: 0px;
@@ -201,7 +204,7 @@
 
 .contact__list,
 .link {
-  color: #757575;
+  color:#212121;
 
   transition-property: color;
   transition-duration: 250ms;

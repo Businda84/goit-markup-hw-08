@@ -77,13 +77,15 @@ border: 1px solid #EEEEEE
    justify-content: center;
   & :last-child{margin-right: auto}
 }
-
+@media screen and (min-width:1200px){
+    margin: 0;
+}
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .projects__list {
-    width: 370px;
+    width: 100%;
 
     transition-property: color;
     transition-duration: 250ms;

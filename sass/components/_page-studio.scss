@@ -7,6 +7,7 @@
   .our-features {
 
 @media screen and (min-width:480px){
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -34,8 +35,8 @@
 }
 
 .our-features__list {
-@media screen and (min-width:480px){
-    padding-top: 60px;
+@media screen and (min-width:480px) and (max-width:767px){
+    // padding-top: 60px;
 }
 
  
@@ -43,13 +44,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin-top: 60px;
-        margin: -15px;
+        gap: 30px;
+
     }
         
     @media screen and (min-width: 1200px) {
         display: flex;
-        gap: 30px;
+       flex-wrap: nowrap;
+        margin: 0;
     }
         
     }
@@ -57,7 +59,7 @@
 .our-features__item {
 
 
-    width: 270px;
+    width: 354px;
 
     @media screen and (max-width:767px) {
         width: 100%;
@@ -74,6 +76,11 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    @media screen and (max-width:767px) {
+        display: flex;
+        justify-content: center;
+        
+    }
 }
 
 .our-features__text {

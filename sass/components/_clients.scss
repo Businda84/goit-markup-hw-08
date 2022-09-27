@@ -1,11 +1,11 @@
 
 
-.client{
+.client {
     @media screen and (max-width:767px) {
         padding-bottom: 30px;
-        width: calc((100% - 60px) / 2);
-        margin: 15px;
-        // height: 92px;
+       margin: 0;
+        
+       height: 92px;
         }
     @media screen and (min-width: 768px){
         margin: 15px;
@@ -15,12 +15,13 @@
   
        width: 170px;
        height: 92px;
+       margin: 0;
   }}}
 
 .regular-customers__title {
     padding-bottom: 50px;
     text-align: center;
-   padding-top: 40px;
+
             padding-bottom: 0px;
             font-weight: 700;
             font-size: 36px;
@@ -52,22 +53,20 @@
 
 
 .client-list {
+  
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    // flex-wrap: wrap;
-    // justify-content: space-around;
+
 @media screen and(max-width:767px){
 
-margin: -15px;
+gap: 30px;
 }
 
-@media screen and(min-width:767px) {
-       
-        margin: -15px;
-        }
+
  @media screen and(min-width:1200px){
     flex-wrap: nowrap;
+    margin: 0;
  }
 }
 .client__list {
