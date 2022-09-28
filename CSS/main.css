@@ -74,11 +74,11 @@
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1117,25 +1117,29 @@ input {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .client {
-    padding-bottom: 30px;
     margin: 0;
     width: 210px;
     height: 92px;
   }
 }
-@media screen and (min-width: 768px) {
-  .client {
-    margin: 15px;
-    width: calc((100% - 90px) / 3);
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .client {
     width: 170px;
     height: 92px;
     margin: 0;
+  }
+}
+
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .client-list {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -1149,39 +1153,6 @@ input {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .client-list {
-    display: inline-block;
-    text-align: center;
-  }
-  .client__icon {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .client-list {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .client-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .client-list {
-    flex-wrap: nowrap;
-    margin: 0;
-  }
 }
 
 .client__list {
@@ -1201,14 +1172,13 @@ input {
   color: var(--color-web-blue);
   border-color: var(--color-web-blue);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .client__list {
     flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .client__list {
-    box-sizing: border-box;
     display: flex;
     gap: 30px;
     justify-content: center;
