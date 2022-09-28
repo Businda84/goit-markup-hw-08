@@ -68,6 +68,13 @@
     margin-left: 0;
   }
 }
+@media screen and (min-width: 678px) and (max-width: 1199px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -1817,11 +1824,13 @@ input {
   .footer__container-address-social-networks {
     display: flex;
     align-items: center;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__container-address-social-networks {
     align-items: flex-start;
+    text-align: left;
   }
 }
 
