@@ -25,6 +25,7 @@
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+        transition: opacity var(--transition-timing-cub), visibility var(--transition-timing-cub);
 }
 .close-menu-btn-icon{
     width: 40px;
