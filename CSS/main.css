@@ -1086,7 +1086,8 @@ input {
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
     margin: -15px;
   }
 }
