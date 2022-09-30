@@ -169,8 +169,6 @@ body {
 }
 
 ul {
-  padding-top: 48px;
-  padding-left: 40px;
   list-style: none;
 }
 
@@ -1614,6 +1612,7 @@ input {
   .footer__logo {
     padding: 0;
     display: inline-block;
+    margin-left: 0;
     margin-bottom: 20px;
     margin-right: 0px;
   }
