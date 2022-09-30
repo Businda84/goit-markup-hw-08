@@ -20,12 +20,13 @@
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+    transition: opacity var(--transition-timing-cub), visibility var(--transition-timing-cub);
 }
 .mobile-menu.is-open {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
-        transition: opacity var(--transition-timing-cub), visibility var(--transition-timing-cub);
+        
 }
 .close-menu-btn-icon{
     width: 40px;

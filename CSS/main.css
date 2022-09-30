@@ -18,9 +18,6 @@
 }
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -29,6 +26,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768) and (max-width: 1199px) {
+  .logo {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 1199px) {
   .logo {
@@ -46,6 +48,9 @@
 }
 @media screen and (min-width: 1200px) {
   .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -70,7 +75,7 @@
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
@@ -164,6 +169,8 @@ body {
 }
 
 ul {
+  padding-top: 48px;
+  padding-left: 40px;
   list-style: none;
 }
 
@@ -196,13 +203,13 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity var(--transition-timing-cub), visibility var(--transition-timing-cub);
 }
 
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transition: opacity var(--transition-timing-cub), visibility var(--transition-timing-cub);
 }
 
 .close-menu-btn-icon {
@@ -320,6 +327,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -329,6 +337,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contact {
+    padding: 0;
     display: flex;
     align-items: center;
     align-items: flex-start;
@@ -363,6 +372,7 @@ img {
 @media screen and (min-width: 768px) {
   .pagination {
     display: flex;
+    padding: 0;
   }
 }
 
@@ -475,9 +485,10 @@ img {
   }
 }
 
-.container.page-header {
+.page-header {
   border-bottom: 1px solid #ECECEC;
 }
+
 @media screen and (max-width: 767px) {
   .container.page-header {
     margin-bottom: 0px;
@@ -542,7 +553,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -574,20 +585,21 @@ img {
     max-width: 767px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero {
     width: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
     width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
+
 .hero__title {
   text-align: center;
   text-transform: uppercase;
