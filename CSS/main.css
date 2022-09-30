@@ -380,7 +380,7 @@ img {
   background-color: transparent;
   padding: 0px;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .open-mobile-menu-btn {
     display: none;
   }
